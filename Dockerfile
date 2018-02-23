@@ -1,3 +1,1 @@
-FROM smartmobilelabs/hubraumonboarding:jenkins-Orchestrator_on_docker_93
-
-
+FROM smartmobilelabs/hubraumonboarding:jenkins-Orchestrator_on_docker-93
