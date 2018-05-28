@@ -1,0 +1,4 @@
+hubraum /home/docker/work/remote-call-dev/provisining.json admin Sml1Orchestrator 
+cam_hubraum_setup ociCam3 ociStream3 5040 /home/docker/work/remote-call-dev/provisining.json stream_mpegts.sdp
+sleep -1
+quit
