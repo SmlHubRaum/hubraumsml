@@ -1,0 +1,5 @@
+hubraum /home/ubuntu/sml/git/hubraumsml/remote-call-dev/provisining.json admin Sml1Orchestrator 
+config_hubraum_forwarding ociCam3_id ociStream3_id 127.0.0.1 6014 6015 /home/ubuntu/sml/git/hubraumsml/remote-call-dev/provisining.json DEFAULT DEFAULT
+start_forwarding ociCam3_id ociStream3_id
+sleep 600
+quit
