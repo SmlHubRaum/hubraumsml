@@ -1,0 +1,236 @@
+---
+apiVersion: v1
+kind: application
+metadata:
+  name: devtest.sml-evo-dev
+  commType: http
+spec:
+  services:
+    - serviceName: sml-evo-dev
+      components:
+        - componentName: sml-evo-dev
+          imageType: docker
+          imageName: sml-evo-hubraum-dev
+          httpPort: 8080
+          interfaces:
+            - interfaceName: evo-rest
+              interfaceType: http
+              upstreamPath: /
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16000
+              interfaceType: network
+              interfacePort: 16000
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16001
+              interfaceType: network
+              interfacePort: 16001
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16002
+              interfaceType: network
+              interfacePort: 16002
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16003
+              interfaceType: network
+              interfacePort: 16003
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16004
+              interfaceType: network
+              interfacePort: 16004
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16005
+              interfaceType: network
+              interfacePort: 16005
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16006
+              interfaceType: network
+              interfacePort: 16006
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16007
+              interfaceType: network
+              interfacePort: 16007
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16008
+              interfaceType: network
+              interfacePort: 16009
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16010
+              interfaceType: network
+              interfacePort: 16010
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16011
+              interfaceType: network
+              interfacePort: 16011
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16012
+              interfaceType: network
+              interfacePort: 16012
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16013
+              interfaceType: network
+              interfacePort: 16013
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16014
+              interfaceType: network
+              interfacePort: 16014
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16015
+              interfaceType: network
+              interfacePort: 16015
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16016
+              interfaceType: network
+              interfacePort: 16016
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16017
+              interfaceType: network
+              interfacePort: 16017
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16018
+              interfaceType: network
+              interfacePort: 16018
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16019
+              interfaceType: network
+              interfacePort: 16019
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16020
+              interfaceType: network
+              interfacePort: 16020
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16021
+              interfaceType: network
+              interfacePort: 16021
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16022
+              interfaceType: network
+              interfacePort: 16022
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16023
+              interfaceType: network
+              interfacePort: 16023
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16024
+              interfaceType: network
+              interfacePort: 16024
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16025
+              interfaceType: network
+              interfacePort: 16025
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16026
+              interfaceType: network
+              interfacePort: 16026
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16027
+              interfaceType: network
+              interfacePort: 16027
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16028
+              interfaceType: network
+              interfacePort: 16028
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16029
+              interfaceType: network
+              interfacePort: 16029
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16030
+              interfaceType: network
+              interfacePort: 16030
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+          resourceProfiles:
+            - resourceProfileName: default
+              memory: 1024
+              cpu: 2
+          defaultResourceProfile: default
