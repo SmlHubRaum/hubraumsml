@@ -7,7 +7,8 @@ JSON_HEADER = {'content-type': 'application/json'}
 report = {"status": "down", "cloudlet": "", "latency": 0.0}
 #aseemedgecr/dk-service-06
 # Auth with  ENS platform
-c = ENSClient("jmorgade.sml-evo-dev")
+c = ENSClient("jmorgade.sml-evo-dev6")
+print("mge: discovered")
 #c = ENSClient("markmiller.aseem_app-dep-3")
 cumulative_time = 0.0
 
@@ -15,7 +16,8 @@ if not c.init():
     print("Failed to initialize")
     report["status"] = "auth-error"
 else:
-    s = c.connect("sml-evo.evo-rest")
+    print("mge: trying to connect")
+    s = c.connect("sml-evo-dev.evo-rest")
 
     import pdb
     pdb.set_trace()
