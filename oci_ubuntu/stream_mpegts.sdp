@@ -1,0 +1,4 @@
+v=0
+m=video [CLIENT_PORT] RTP/AVP 33
+a=rtpmap:33 MP2T/90000
+a=control:mpegts-transport
