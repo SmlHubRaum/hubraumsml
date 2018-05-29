@@ -1,5 +1,5 @@
-FROM smartmobilelabs/sml_orchestrator_development:jenkins-Orchestrator_on_docker-93
-#FROM smartmobilelabs/sml_orchestrator_development:priv_docker
+#FROM smartmobilelabs/sml_orchestrator_development:jenkins-Orchestrator_on_docker-93
+FROM smartmobilelabs/sml_orchestrator_development:hubraum
 
 COPY server.xml_template /usr/local/tomcat/conf
 COPY PacketDispatcher /usr/local/tomcat/native-libs

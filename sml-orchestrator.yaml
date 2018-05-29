@@ -77,6 +77,13 @@ spec:
                 - app@client
             - interfaceName: evo-udp16008
               interfaceType: network
+              interfacePort: 16008
+              scheme: udp
+              visiblity: external
+              accessList:
+                - app@client
+            - interfaceName: evo-udp16009
+              interfaceType: network
               interfacePort: 16009
               scheme: udp
               visiblity: external
