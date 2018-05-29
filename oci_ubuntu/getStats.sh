@@ -11,5 +11,8 @@ API="API-KEY: $API_KEY_TMP"
 echo $API
 echo $ORCHESTRATOR
 curl -u "${USERNAME}:${PASSWORD}"  -H "${API}" $ORCHESTRATOR/rest/statistics/cameras
+echo "\n"
+curl -u "${USERNAME}:${PASSWORD}"  -H "${API}" $ORCHESTRATOR/rest/statistics/system
+echo "\n"
 
 
