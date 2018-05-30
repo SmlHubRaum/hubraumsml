@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL-libssl
+Description: Secure Sockets Layer and cryptography libraries
+Version: 1.0.2m
+Requires.private: libcrypto
+Libs: -L${libdir} -lssl
+Libs.private: -L/home/builder/hubraum/git/owrt/staging_dir/target-arm_mpcore+vfp_glibc-2.22_eabi/usr/lib -L/home/builder/hubraum/git/owrt/staging_dir/target-arm_mpcore+vfp_glibc-2.22_eabi/lib -L/home/builder/hubraum/git/owrt/staging_dir/toolchain-arm_mpcore+vfp_gcc-5.3.0_glibc-2.22_eabi/usr/lib -L/home/builder/hubraum/git/owrt/staging_dir/toolchain-arm_mpcore+vfp_gcc-5.3.0_glibc-2.22_eabi/lib -ldl -ldl
+Cflags: -I${includedir} 
