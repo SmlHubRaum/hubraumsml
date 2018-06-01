@@ -1,0 +1,4 @@
+hubraum /home/ubuntu/sml/git/hubraumsml/rest_api/certify.json admin Sml1Orchestrator 
+cam_hubraum_setup ociCam3 ociStream3 5040 /home/ubuntu/sml/git/hubraumsml/rest_api/certify.json stream_mpegts.sdp
+sleep -1
+quit

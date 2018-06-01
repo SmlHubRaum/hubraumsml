@@ -12,7 +12,7 @@ echo $API
 echo $ORCHESTRATOR
 curl -u "${USERNAME}:${PASSWORD}"  -H "${API}" $ORCHESTRATOR/rest/statistics/cameras
 echo "\n"
-curl -u "${USERNAME}:${PASSWORD}"  -H "${API}" $ORCHESTRATOR/rest/statistics/system
+#curl -u "${USERNAME}:${PASSWORD}"  -H "${API}" $ORCHESTRATOR/rest/statistics/system
 echo "\n"
 
 

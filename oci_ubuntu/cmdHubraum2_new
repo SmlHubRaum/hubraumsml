@@ -1,0 +1,4 @@
+hubraum /home/ubuntu/sml/git/hubraumsml/remote-call-dev_new/provisining.json admin Sml1Orchestrator 
+cam_hubraum_setup ociCam2 ociStream2 5060 /home/ubuntu/sml/git/hubraumsml/remote-call-dev_new/provisining.json stream_mpegts.sdp
+sleep -1
+quit
