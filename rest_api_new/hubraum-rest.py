@@ -52,6 +52,6 @@ if __name__ == '__main__':
     else:
         run_port = 10002
     #data = json.load(open('/home/docker/work/remote-call-dev/provisining.json'))
-    data = json.load(open('/home/ubuntu/sml/git/hubraumsml/remote-call-dev/provisining.json'))
+    data = json.load(open('/home/ubuntu/sml/git/hubraumsml/remote-call-dev_new/provisining.json'))
     #data = json.load(open('provisioning.json'))
     app.run(host='0.0.0.0',port=int(run_port), debug=True)
