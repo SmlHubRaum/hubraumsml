@@ -1,0 +1,161 @@
+2018-06-06 14:52:12,949 INFO     ensclient.py      588 Loading MEC SDK settings
+2018-06-06 14:52:12,949 INFO     ensclient.py      608 df583d8f-393d-4a5c-989c-68ea93cb0d59 4e78bd7f3bcd430d8b4ada3ec43fc1f8
+2018-06-06 14:52:12,949 INFO     ensclient.py      640 mge: discovery_url_pattern: http://127.0.0.1:60678/api/v1.0/discover/devtest/sml-evo-dev?sdkversion=2.0.0
+2018-06-06 14:52:12,949 INFO     ensclient.py      641 mge: headers: 94210a722354020e4c048f6413fd3824de24bdb0
+2018-06-06 14:52:12,951 DEBUG    connectionpool.py  208 Starting new HTTP connection (1): 127.0.0.1
+2018-06-06 14:52:12,963 DEBUG    connectionpool.py  396 http://127.0.0.1:60678 "GET /api/v1.0/discover/devtest/sml-evo-dev?sdkversion=2.0.0 HTTP/1.1" 200 144
+2018-06-06 14:52:12,964 DEBUG    ensclient.py      682 Discovery server response:
+{u'cloudlets': {u'eib.local': {u'endpoints': {u'probe': u'tcp://10.0.2.15:60673'}}}, u'cloud': {u'endpoints': {u'app@cloud': u'http://127.0.0.1:65000'}}}
+2018-06-06 14:52:12,964 INFO     ensclient.py      704 1 probe candidate cloudlets found by discovery
+2018-06-06 14:52:12,964 INFO     ensclient.py      439 [Cloudlet:eib.local][App:sml-evo-dev]: Probe START
+2018-06-06 14:52:12,965 DEBUG    ensclient.py      449 [Cloudlet:eib.local][App:sml-evo-dev]: Probing at 10.0.2.15:60673
+2018-06-06 14:52:12,965 INFO     ensclient.py      455 mge: socket connect: ('10.0.2.15', 60673)
+2018-06-06 14:52:12,965 INFO     ensclient.py      456 mge: socket command: ENS-PROBE devtest.sml-evo-dev
+2018-06-06 14:52:12,965 DEBUG    ensclient.py      525 [eib.local][sml-evo-dev]: Tx ENS-PROBE devtest.sml-evo-dev
+
+2018-06-06 14:52:12,966 INFO     ensclient.py      488 mge: socket recv: buffer len 8192
+2018-06-06 14:52:12,966 DEBUG    ensclient.py      490 [Cloudlet:eib.local][App:sml-evo-dev]: Rx ENS-PROBE-OK devtest.sml-evo-dev
+
+2018-06-06 14:52:12,966 DEBUG    ensclient.py      525 [eib.local][sml-evo-dev]: Tx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,966 INFO     ensclient.py      488 mge: socket recv: buffer len 8192
+2018-06-06 14:52:12,966 DEBUG    ensclient.py      490 [Cloudlet:eib.local][App:sml-evo-dev]: Rx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,966 DEBUG    ensclient.py      510 [Cloudlet:eib.local][App:sml-evo-dev][Probe 1]: RTT = 0.000121831893921
+2018-06-06 14:52:12,966 DEBUG    ensclient.py      525 [eib.local][sml-evo-dev]: Tx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,966 INFO     ensclient.py      488 mge: socket recv: buffer len 8192
+2018-06-06 14:52:12,966 DEBUG    ensclient.py      490 [Cloudlet:eib.local][App:sml-evo-dev]: Rx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,966 DEBUG    ensclient.py      510 [Cloudlet:eib.local][App:sml-evo-dev][Probe 2]: RTT = 0.000115156173706
+2018-06-06 14:52:12,967 DEBUG    ensclient.py      525 [eib.local][sml-evo-dev]: Tx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,967 INFO     ensclient.py      488 mge: socket recv: buffer len 8192
+2018-06-06 14:52:12,967 DEBUG    ensclient.py      490 [Cloudlet:eib.local][App:sml-evo-dev]: Rx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,967 DEBUG    ensclient.py      510 [Cloudlet:eib.local][App:sml-evo-dev][Probe 3]: RTT = 0.000113010406494
+2018-06-06 14:52:12,967 DEBUG    ensclient.py      525 [eib.local][sml-evo-dev]: Tx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,967 INFO     ensclient.py      488 mge: socket recv: buffer len 8192
+2018-06-06 14:52:12,967 DEBUG    ensclient.py      490 [Cloudlet:eib.local][App:sml-evo-dev]: Rx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,967 DEBUG    ensclient.py      510 [Cloudlet:eib.local][App:sml-evo-dev][Probe 4]: RTT = 0.000108003616333
+2018-06-06 14:52:12,967 DEBUG    ensclient.py      525 [eib.local][sml-evo-dev]: Tx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,967 INFO     ensclient.py      488 mge: socket recv: buffer len 8192
+2018-06-06 14:52:12,967 DEBUG    ensclient.py      490 [Cloudlet:eib.local][App:sml-evo-dev]: Rx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,968 DEBUG    ensclient.py      510 [Cloudlet:eib.local][App:sml-evo-dev][Probe 5]: RTT = 0.000236034393311
+2018-06-06 14:52:12,968 DEBUG    ensclient.py      525 [eib.local][sml-evo-dev]: Tx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,968 INFO     ensclient.py      488 mge: socket recv: buffer len 8192
+2018-06-06 14:52:12,968 DEBUG    ensclient.py      490 [Cloudlet:eib.local][App:sml-evo-dev]: Rx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,968 DEBUG    ensclient.py      510 [Cloudlet:eib.local][App:sml-evo-dev][Probe 6]: RTT = 0.000195026397705
+2018-06-06 14:52:12,968 DEBUG    ensclient.py      525 [eib.local][sml-evo-dev]: Tx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,968 INFO     ensclient.py      488 mge: socket recv: buffer len 8192
+2018-06-06 14:52:12,968 DEBUG    ensclient.py      490 [Cloudlet:eib.local][App:sml-evo-dev]: Rx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,968 DEBUG    ensclient.py      510 [Cloudlet:eib.local][App:sml-evo-dev][Probe 7]: RTT = 0.000108003616333
+2018-06-06 14:52:12,968 DEBUG    ensclient.py      525 [eib.local][sml-evo-dev]: Tx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,968 INFO     ensclient.py      488 mge: socket recv: buffer len 8192
+2018-06-06 14:52:12,969 DEBUG    ensclient.py      490 [Cloudlet:eib.local][App:sml-evo-dev]: Rx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,969 DEBUG    ensclient.py      510 [Cloudlet:eib.local][App:sml-evo-dev][Probe 8]: RTT = 0.000185966491699
+2018-06-06 14:52:12,969 DEBUG    ensclient.py      525 [eib.local][sml-evo-dev]: Tx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,969 INFO     ensclient.py      488 mge: socket recv: buffer len 8192
+2018-06-06 14:52:12,969 DEBUG    ensclient.py      490 [Cloudlet:eib.local][App:sml-evo-dev]: Rx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,969 DEBUG    ensclient.py      510 [Cloudlet:eib.local][App:sml-evo-dev][Probe 9]: RTT = 0.000159978866577
+2018-06-06 14:52:12,969 DEBUG    ensclient.py      525 [eib.local][sml-evo-dev]: Tx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,969 INFO     ensclient.py      488 mge: socket recv: buffer len 8192
+2018-06-06 14:52:12,969 DEBUG    ensclient.py      490 [Cloudlet:eib.local][App:sml-evo-dev]: Rx ENS-RTT devtest.sml-evo-dev
+
+2018-06-06 14:52:12,970 DEBUG    ensclient.py      510 [Cloudlet:eib.local][App:sml-evo-dev][Probe 10]: RTT = 0.000174045562744
+2018-06-06 14:52:12,970 INFO     ensclient.py      517 [Cloudlet:eib.local][App:sml-evo-dev]: Completed 10 RTT probes. Mean RTT:0.000151705741882
+2018-06-06 14:52:13,972 INFO     ensclient.py      723 [Cloudlet:eib.local][App:sml-evo-dev]: Probe STOP
+2018-06-06 14:52:13,973 INFO     ensclient.py      726 Probes completed for all Cloudlet candidates
+2018-06-06 14:52:13,973 INFO     ensclient.py      735 Sorted Probe Report
+2018-06-06 14:52:13,974 INFO     ensclient.py      736 ===================
+2018-06-06 14:52:13,974 INFO     ensclient.py      739 Cloudlet: eib.local RTT: 0.000151705741882
+2018-06-06 14:52:13,974 INFO     ensclient.py      741 Selected cloudlet for provision: eib.local
+2018-06-06 14:52:13,974 INFO     ensclient.py      757 Requesting provisioning of sml-evo-dev
+2018-06-06 14:52:13,975 INFO     ensclient.py      758 mge: url http://127.0.0.1:65000/api/v1.0/app_cloud/devtest/sml-evo-dev/eib.local/dc8ead82eb7a460aaa4b1bc00e5f95d6 headers {'content-type': 'application/json'}
+2018-06-06 14:52:13,978 DEBUG    connectionpool.py  208 Starting new HTTP connection (1): 127.0.0.1
+2018-06-06 14:52:16,207 DEBUG    connectionpool.py  396 http://127.0.0.1:65000 "POST /api/v1.0/app_cloud/devtest/sml-evo-dev/eib.local/dc8ead82eb7a460aaa4b1bc00e5f95d6 HTTP/1.1" 200 2430
+2018-06-06 14:52:16,207 DEBUG    ensclient.py      760 Provision response: {"microservices": [{"httpGateway": [{"expiresIn": "900", "endpoint": "http://10.0.2.15:8000/1528286143", "refreshToken": "ab91ce61af0b4a40939efe4320c8d5cf-refresh", "accessToken": "ab91ce61af0b4a40939efe4320c8d5cf", "httpApiId": "evo-rest"}], "networkBinding": [{"networkId": "evo-udp16012", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16013", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16010", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16011", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16016", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16017", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16014", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16015", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16018", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16019", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16030", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16009", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16008", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16005", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16004", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16007", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16006", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16001", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16000", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16003", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16002", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16027", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16026", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16025", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16024", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16023", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16022", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16021", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16020", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16029", "endpoint": "udp://10.0.2.15:0"}, {"networkId": "evo-udp16028", "endpoint": "udp://10.0.2.15:0"}], "name": "sml-evo-dev", "eventGateway": [], "uuid": "1528286143"}], "deploymentId": {"cloudletId": "eib.local", "uuid": "1528286143", "developerId": "devtest", "appId": "sml-evo-dev"}}
+2018-06-06 14:52:16,208 INFO     ensclient.py      774 Provision completed for sml-evo-dev
+2018-06-06 14:52:16,209 INFO     ensclient.py      254 Create ENSHttpSession to interface sml-evo-dev.evo-rest on application devtest.sml-evo-dev
+2018-06-06 14:52:16,209 INFO     ensclient.py      264 Connecting to HTTP interface sml-evo-dev.evo-rest at {u'expiresIn': u'900', u'endpoint': u'http://10.0.2.15:8000/1528286143', u'refreshToken': u'ab91ce61af0b4a40939efe4320c8d5cf-refresh', u'httpApiId': u'evo-rest', u'accessToken': u'ab91ce61af0b4a40939efe4320c8d5cf'}
+2018-06-06 14:52:16,209 DEBUG    ensclient.py      298 Request Method:GET, URL: http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+2018-06-06 14:52:16,210 DEBUG    connectionpool.py  208 Starting new HTTP connection (1): 10.0.2.15
+2018-06-06 14:52:25,671 DEBUG    connectionpool.py  396 http://10.0.2.15:8000 "GET /1528286143/LTECamOrchestrator/rest/statistics/cameras HTTP/1.1" 200 None
+2018-06-06 14:52:25,674 INFO     ensclient.py      305 Response Status:200
+2018-06-06 14:52:25,674 INFO     ensclient.py      306 mge: http request: http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+2018-06-06 14:52:25,674 INFO     ensclient.py      307 mge: http request header: {'content-type': 'application/json', 'API-KEY': u'ab91ce61af0b4a40939efe4320c8d5cf'}
+mge: discovered
+mge: trying to connect
+Start GET ...
+--------------------
+{'content-type': 'application/json', 'API-KEY': u'ab91ce61af0b4a40939efe4320c8d5cf'}
+http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+--------------------
+[]
+API response: <Response [200]>
+Latency = 9.46559691429
+2018-06-06 14:52:27,683 DEBUG    ensclient.py      298 Request Method:GET, URL: http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+2018-06-06 14:52:27,687 DEBUG    connectionpool.py  208 Starting new HTTP connection (1): 10.0.2.15
+2018-06-06 14:52:27,696 DEBUG    connectionpool.py  396 http://10.0.2.15:8000 "GET /1528286143/LTECamOrchestrator/rest/statistics/cameras HTTP/1.1" 200 None
+2018-06-06 14:52:27,697 INFO     ensclient.py      305 Response Status:200
+2018-06-06 14:52:27,697 INFO     ensclient.py      306 mge: http request: http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+2018-06-06 14:52:27,697 INFO     ensclient.py      307 mge: http request header: {'content-type': 'application/json', 'API-KEY': u'ab91ce61af0b4a40939efe4320c8d5cf'}
+--------------------
+{'content-type': 'application/json', 'API-KEY': u'ab91ce61af0b4a40939efe4320c8d5cf'}
+http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+--------------------
+[]
+API response: <Response [200]>
+Latency = 0.0149450302124
+2018-06-06 14:52:29,701 DEBUG    ensclient.py      298 Request Method:GET, URL: http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+2018-06-06 14:52:29,702 DEBUG    connectionpool.py  208 Starting new HTTP connection (1): 10.0.2.15
+2018-06-06 14:52:29,711 DEBUG    connectionpool.py  396 http://10.0.2.15:8000 "GET /1528286143/LTECamOrchestrator/rest/statistics/cameras HTTP/1.1" 200 None
+2018-06-06 14:52:29,712 INFO     ensclient.py      305 Response Status:200
+2018-06-06 14:52:29,712 INFO     ensclient.py      306 mge: http request: http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+2018-06-06 14:52:29,712 INFO     ensclient.py      307 mge: http request header: {'content-type': 'application/json', 'API-KEY': u'ab91ce61af0b4a40939efe4320c8d5cf'}
+--------------------
+{'content-type': 'application/json', 'API-KEY': u'ab91ce61af0b4a40939efe4320c8d5cf'}
+http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+--------------------
+[]
+API response: <Response [200]>
+Latency = 0.0114810466766
+2018-06-06 14:52:31,715 DEBUG    ensclient.py      298 Request Method:GET, URL: http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+2018-06-06 14:52:31,720 DEBUG    connectionpool.py  208 Starting new HTTP connection (1): 10.0.2.15
+2018-06-06 14:52:31,729 DEBUG    connectionpool.py  396 http://10.0.2.15:8000 "GET /1528286143/LTECamOrchestrator/rest/statistics/cameras HTTP/1.1" 200 None
+2018-06-06 14:52:31,730 INFO     ensclient.py      305 Response Status:200
+2018-06-06 14:52:31,730 INFO     ensclient.py      306 mge: http request: http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+2018-06-06 14:52:31,730 INFO     ensclient.py      307 mge: http request header: {'content-type': 'application/json', 'API-KEY': u'ab91ce61af0b4a40939efe4320c8d5cf'}
+--------------------
+{'content-type': 'application/json', 'API-KEY': u'ab91ce61af0b4a40939efe4320c8d5cf'}
+http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+--------------------
+[]
+API response: <Response [200]>
+Latency = 0.0148010253906
+2018-06-06 14:52:33,732 DEBUG    ensclient.py      298 Request Method:GET, URL: http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+2018-06-06 14:52:33,734 DEBUG    connectionpool.py  208 Starting new HTTP connection (1): 10.0.2.15
+2018-06-06 14:52:33,741 DEBUG    connectionpool.py  396 http://10.0.2.15:8000 "GET /1528286143/LTECamOrchestrator/rest/statistics/cameras HTTP/1.1" 200 None
+2018-06-06 14:52:33,742 INFO     ensclient.py      305 Response Status:200
+2018-06-06 14:52:33,742 INFO     ensclient.py      306 mge: http request: http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+2018-06-06 14:52:33,742 INFO     ensclient.py      307 mge: http request header: {'content-type': 'application/json', 'API-KEY': u'ab91ce61af0b4a40939efe4320c8d5cf'}
+--------------------
+{'content-type': 'application/json', 'API-KEY': u'ab91ce61af0b4a40939efe4320c8d5cf'}
+http://10.0.2.15:8000/1528286143/LTECamOrchestrator/rest/statistics/cameras
+--------------------
+[]
+API response: <Response [200]>
+Latency = 0.00986886024475
