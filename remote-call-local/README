@@ -1,3 +1,3 @@
-python remote-caller.py 2>&1 | tee cli.log > /dev/null
+python remote-caller.py 2>&1 | tee cli.log > /dev/null&
 
 fg
