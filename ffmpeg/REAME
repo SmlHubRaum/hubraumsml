@@ -1,0 +1,6 @@
+#webrtc_compliant
+ffmpeg -re -f concat -safe 0 -i files.txt -vcodec libx264 -profile:v baseline -preset veryfast -tune zerolatency -an -f rtp rtp://127.0.0.1:5060
+
+
+#to enable audio with OCI we need mpegts signalling
+ffmpeg -re -i ~/Media1.mp4 -strict -2 -f rtp_mpegts rtp://127.0.0.1:5040
